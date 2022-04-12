@@ -131,6 +131,8 @@ nav{
     color: #EB1C1C;
 }
 
+
+
 /*GALERIA DE FOTOS*/
 
 #galeria{
@@ -197,12 +199,11 @@ footer{
     border-color: #3196E8;
 }
 
-.fotosServicios:hover{
-    width: 400px;
-    height: 260px;
-    border-style: solid;
-    border-color: #3196E8;
-}
+
+
+
+
+
 /************************************** NOSOTROS.HTML  ********************************************/
 
 /*CONFIGURACION DEL GRID*/
@@ -269,9 +270,9 @@ form{
     width: 70%;
 }
 
-/*   ANIMACIONES*/
-
-.animacion{
+/***********************   ANIMACIONES   ********************/
+/*secion incio*/
+.animacionTitulo{
      
     animation-name: animacionPelones;
     animation-duration: 6s;
@@ -296,6 +297,31 @@ form{
     }
 
 }
+
+/*seccion servicios*/
+
+.fotosServicios:hover{
+    animation-name: animacionFotoServ ;
+    animation-duration: 3s;
+}
+
+@keyframes animacionFotoServ{
+    1%{
+        transform: rotate(0.7turn);  
+    }
+    80%{
+        transform: scale(2, 2);
+    }
+    100%{
+        transform: scale(2, );
+    }
+
+}
+
+
+
+
+
 
 /* MODO RESPONSIVE*/
 /**********************    TABLET   *************************/
