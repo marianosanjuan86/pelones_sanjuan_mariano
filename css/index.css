@@ -269,6 +269,33 @@ form{
     width: 70%;
 }
 
+/*   ANIMACIONES*/
+
+.animacion{
+     
+    animation-name: animacionPelones;
+    animation-duration: 6s;
+
+}
+
+@keyframes animacionPelones{
+
+    0%{
+        transform: translateY( 900px )   
+    }
+    25%{
+        transform: translateY(800px);
+        transform: rotate(0.7turn);
+    }
+    70%{
+        transform: translateY(400px);
+        transform: rotate(0turn); 
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
 
 /* MODO RESPONSIVE*/
 /**********************    TABLET   *************************/
