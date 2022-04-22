@@ -41,13 +41,13 @@ p{
 #gridAreas{
     display: grid;
     grid-template-areas: 
-    "header"
-    "nav"
-    "presentacion"
-    "galeria"
-    "footer"
+    "header header"
+    "nav nav"
+    "presentacion presentacion2"
+    "galeria galeria"
+    "footer footer"
     ;
-    grid-template-columns: 100% ;
+    grid-template-columns: 50% 50% ;
     grid-template-rows: 3fr 1fr 5fr 5fr 2fr ;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
@@ -102,11 +102,25 @@ nav{
 #seccionPresentacion{
     grid-area: presentacion;
     display: flex;
+    justify-content: center;
     margin: 50px 5%;
     
 }
 
-#seccionPresentacion div img{
+#seccionPresentacion div{
+    
+    text-align: center;
+    
+}
+
+#seccionPresentacion2{
+    grid-area: presentacion2;
+    display: flex;
+    justify-content: center;
+    margin: 50px 5%;  
+}
+
+#seccionPresentacion2 div img{
     padding: 20px;
     width: 450px; 
     height: 275px;
@@ -114,12 +128,6 @@ nav{
 
 }
 
-#seccionPresentacion div{
-    width: 50%;
-    margin: 40px 40px 80px 40px;
-    text-align: center;
-    
-}
 
 
 .resaltarPalabra{
