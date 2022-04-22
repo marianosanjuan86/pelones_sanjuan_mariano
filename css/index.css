@@ -25,6 +25,10 @@ h2{
     font-size: 2rem;
 }
 
+h6{
+    font-size: 0.7rem;
+}
+
 p{
     font-family: 'Acme', sans-serif;
     font-size: 1.2rem;
@@ -243,18 +247,25 @@ nav{
 footer{
     grid-area: footer;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px auto;
+    padding: 10px;
 }
 
 .logoFooter{
-    width: 5%;
-    height: 5%;
+    width: 5vh;
+    height: 5vh;
 }
 
 footer div {
     display: flex;
     align-items: center;
+}
+
+footer div h3 {
+    font-size: 1rem;
+    
 }
 
     
