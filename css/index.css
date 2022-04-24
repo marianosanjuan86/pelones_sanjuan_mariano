@@ -465,6 +465,27 @@ form{
 }
 
 
+/************************************** COBERTURA.HTML  ********************************************/
+
+#gridAreasCobertura{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "cobertura"
+    "preguntas"
+    "footer"
+    ;
+    grid-template-columns: 100% ;
+    grid-template-rows: 3fr 1fr 5fr 5fr 2fr ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+#seccionCobertura{
+    grid-area: cobertura;
+    text-align: center;
+}
 
 
 /***********************   ANIMACIONES   ********************/
