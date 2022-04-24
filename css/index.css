@@ -251,6 +251,7 @@ footer{
     width: 100%;
     margin: 50px auto;
     padding: 10px;
+    border-top: solid 1px black;
 }
 
 .logoFooter{
@@ -389,6 +390,82 @@ form{
 .cajaFormulario{
     width: 70%;
 }
+
+/************************************** NORMAS.HTML  ********************************************/
+
+#gridAreasNormas{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "normas"
+    "preguntas"
+    "footer"
+    ;
+    grid-template-columns: 100% ;
+    grid-template-rows: 3fr 1fr 5fr 5fr 2fr ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+#seccionNormas{
+    grid-area: normas;
+    text-align: center;
+}
+
+.containerCartelNormas{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20vh;
+
+}
+
+.cartelNormas{
+    border: black solid;
+    border-radius: 10px;
+    width: 15%;
+    height: 75%;
+    margin: 5px;
+    
+}
+
+.cartelNormas div{
+    background: #fd6c6c;
+    width: 100%;
+    height: 25%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-family: 'Acme', sans-serif;
+}
+
+.cartelNormas div:nth-child(2){
+    background: #74baf3;
+    height: 75%;
+}
+
+.cartelNormas h3 {
+    font-size: 2.5vw;
+}
+
+#seccionPreguntas{
+    grid-area: preguntas;
+    text-align: center;
+    margin: 10% 0% 0% 0%;
+}
+
+#seccionPreguntas h2{
+    text-align: left;
+    font-size: 1.9rem;
+    text-decoration: underline;
+    text-decoration-color: black;
+    padding: 5px;
+    margin: auto;
+}
+
+
+
 
 /***********************   ANIMACIONES   ********************/
 /*secion incio*/
