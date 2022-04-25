@@ -367,11 +367,10 @@ footer div h3 {
     "header"
     "nav"
     "contacto"
-    "galeria"
     "footer"
     ;
     grid-template-columns: 100% ;
-    grid-template-rows: 3fr 1fr 5fr 5fr 2fr ;
+    grid-template-rows: 3fr 1fr 5fr 2fr ;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
@@ -747,7 +746,7 @@ form{
         "footer"
         ;
         grid-template-columns: 100% ;
-        grid-template-rows: 0fr 0fr 50vh 0fr 1fr 0fr ;
+        grid-template-rows: 0fr 0fr 0fr 0fr 1fr 0fr ;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
@@ -838,7 +837,7 @@ form{
             "varios"
             "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 0fr 3fr 1fr 1fr 1fr 0fr;
+        grid-template-rows: 0fr 0fr 1fr 0fr 0fr 0fr 0fr;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
@@ -856,8 +855,8 @@ form{
     }
     
     .fotosServicios {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: 100%;
         border-style: solid;
         border-color: #3196E8;
         margin: 1px;
@@ -894,6 +893,19 @@ form{
     }
 
     /****************** CONTACTO.HTML ***********************/
+
+    #gridAreasContacto {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "contacto"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 0fr 0fr 1fr 0fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
 
     form{
         text-align: center;
