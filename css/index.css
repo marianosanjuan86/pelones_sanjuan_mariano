@@ -86,6 +86,7 @@ header ul{
 nav{
     grid-area: nav;
     border-bottom: solid 1px black;
+    text-align: center;
 }
 
 .itenNav{
@@ -495,6 +496,15 @@ form{
     text-align: center;
 }
 
+.containerMapa{
+    width: 100%;
+}
+
+.mapa{
+    width: 100%;
+    border-radius: 15px;
+}
+
 
 /***********************   ANIMACIONES   ********************/
 /*secion incio*/
@@ -585,11 +595,12 @@ form{
         "header"
         "nav"
         "presentacion"
+        "presentacion2"
         "galeria"
         "footer"
         ;
         grid-template-columns: 100% ;
-        grid-template-rows: 3fr 1fr 5fr 5fr 2fr ;
+        grid-template-rows: 3fr 1fr 5fr 5fr 5fr 2fr ;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
