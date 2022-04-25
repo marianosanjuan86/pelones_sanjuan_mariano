@@ -943,6 +943,10 @@ form{
         margin: 6px;
     }
 
+    .cartelNormas h3 {
+        font-size: 1.3rem;
+    }
+
     /*******************  COBERTURA.HTML*******************************/
 
     #gridAreasCobertura {
