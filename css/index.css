@@ -456,12 +456,20 @@ form{
 }
 
 #seccionPreguntas h2{
+    background: rgb(253, 108, 108, 0.2);
+    border-radius: 15px;
     text-align: left;
     font-size: 1.9rem;
     text-decoration: underline;
     text-decoration-color: black;
     padding: 5px;
     margin: auto;
+    
+}
+
+#seccionPreguntas p{
+    text-align: left;
+    
 }
 
 
