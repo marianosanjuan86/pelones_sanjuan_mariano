@@ -141,8 +141,6 @@ nav{
 
 }
 
-
-
 .resaltarPalabra{
     color: #EB1C1C;
 }
@@ -340,11 +338,10 @@ footer div h3 {
     "header"
     "nav"
     "nosotros"
-    "galeria"
     "footer"
     ;
     grid-template-columns: 100% ;
-    grid-template-rows: 3fr 1fr 5fr 5fr 2fr ;
+    grid-template-rows: 3fr 1fr 5fr  2fr ;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
@@ -487,11 +484,10 @@ form{
     "header"
     "nav"
     "cobertura"
-    "preguntas"
     "footer"
     ;
     grid-template-columns: 100% ;
-    grid-template-rows: 3fr 1fr 5fr 5fr 2fr ;
+    grid-template-rows: 3fr 1fr 5fr 2fr ;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
@@ -659,7 +655,7 @@ form{
     .iconosSociales {
         margin: 0px;
         padding: 3px;
-
+    }
     /*****************   ESTILOS SERVICIOS.HTML ********************/
 
 
@@ -712,7 +708,7 @@ form{
     
 }
 
-/**********************  SMARTPHONE *************************/
+/*******************************************  SMARTPHONE ********************************************/
 @media (max-width: 480px){
 
     /*ESTILOS GENERALES*/
@@ -751,7 +747,7 @@ form{
         "footer"
         ;
         grid-template-columns: 100% ;
-        grid-template-rows: 3fr 1fr 5fr 5fr 5fr 2fr ;
+        grid-template-rows: 0fr 0fr 50vh 0fr 1fr 0fr ;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
@@ -816,9 +812,36 @@ form{
         margin: 5px;
     }
 
+    footer{
+        margin: 0px auto;
+    }
+
+    .iconosSociales {
+        margin: 0px;
+        padding: 3px;
+    }
+
+    footer div h3 {
+        font-size: 0rem;
+    }
+
     /*****************   ESTILOS SERVICIOS.HTML ********************/
 
-
+    #gridAreasServicios {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "servicios"
+            "inflables"
+            "plaza"
+            "varios"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0fr 3fr 1fr 1fr 1fr 0fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
     
     #seccionServicios {
         grid-area: servicios;
@@ -841,6 +864,19 @@ form{
     }
 
     /******************   NOSOTROS.HTMS ***********************/
+
+    #gridAreasNosotros {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "nosotros"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0fr 2fr 0fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
 
     #seccionNosotros{
         grid-area: nosotros;
@@ -868,8 +904,47 @@ form{
         padding: 20px;
     }
 
+    /****************** NORMAS.HTML ***************************/
 
-}
+    #gridAreasNormas {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "normas"
+            "preguntas"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 0fr 0fr 0fr 2fr 0fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .cartelNormas {
+        border: black solid;
+        border-radius: 10px;
+        width: 30%;
+        height: 75%;
+        margin: 6px;
+    }
+
+    /*******************  COBERTURA.HTML*******************************/
+
+    #gridAreasCobertura {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "cobertura"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 0fr 0fr 1fr 0fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+
+}   
 
 
 
