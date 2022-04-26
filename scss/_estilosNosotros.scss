@@ -1,0 +1,27 @@
+/************************************** NOSOTROS.HTML  ********************************************/
+
+/*CONFIGURACION DEL GRID*/
+#gridAreasNosotros{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "nosotros"
+    "footer"
+    ;
+    grid-template-columns: 100% ;
+    grid-template-rows: 0fr 0fr 2fr  0fr ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+#seccionNosotros{
+    grid-area: nosotros;
+    text-align: center;
+}
+
+.video{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+}

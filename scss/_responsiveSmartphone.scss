@@ -1,0 +1,264 @@
+/*******************************************  SMARTPHONE ********************************************/
+@media (max-width: 480px){
+
+    /*ESTILOS GENERALES*/
+
+    h1 {
+        color: $color1;
+        font-family: 'Sigmar One', cursive;
+        font-size: 3rem;
+        margin: 5%;
+        text-align: center;
+        line-height: 1;
+    }    
+
+    h2 {
+        font-family: $tipografiaGeneral;
+        margin: 5% 0PX;
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-family: $tipografiaGeneral;
+        font-size: 1.2rem;
+        margin: 10px 0px;
+        padding: 5% 0%;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*CONFIGURACION GRID*/
+    #gridAreas{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "presentacion"
+        "presentacion2"
+        "galeria"
+        "footer"
+        ;
+        grid-template-columns: 100% ;
+        grid-template-rows: 0fr 0fr 0.5fr 0fr 1fr 0fr ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    /*ESTILOS HEADER*/
+
+    .logo {
+        height: 20%;
+        width: 20%;
+        margin: 10px;
+    }
+
+    /*ESTILOS NAV*/
+
+    .itenNav {
+        border-style: solid;
+        border-radius: 20px;
+        margin: 3px;
+        padding: 3px;
+    }
+
+
+    /*ESTILOS SECCION PRESENTACION*/
+    #seccionPresentacion {
+        grid-area: presentacion;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px 5%;
+    }
+
+    #seccionPresentacion {
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            height: 40vh;
+            margin: 5%;
+            text-align: center;
+        }
+    }
+
+    
+
+    /*ESTILOS GALERIA*/
+
+    #galeria {
+        grid-area: galeria;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px 5%;
+    }
+
+    .galeriafotos {
+        width: 250px;
+        height: 170px;
+        border-style: solid;
+        border-color: $color1;
+        margin: 5px;
+    }
+
+    footer{
+        margin: 0px auto;
+    }
+
+    .iconosSociales {
+        margin: 0px;
+        padding: 3px;
+    }
+
+    footer {
+        div {
+            h3 {
+                font-size: 0rem;
+            }
+        }
+    
+    }
+    /*****************   ESTILOS SERVICIOS.HTML ********************/
+
+    #gridAreasServicios {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "servicios"
+            "inflables"
+            "plaza"
+            "varios"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 0fr 0fr 1fr 0fr 0fr 0fr 0fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    
+    #seccionServicios {
+        grid-area: servicios;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .imagenesServicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .fotosServicios {
+        width: 100%;
+        height: 100%;
+        border-style: solid;
+        border-color: $color1;
+        margin: 1px;
+    }
+
+    /******************   NOSOTROS.HTMS ***********************/
+
+    #gridAreasNosotros {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "nosotros"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 0fr 2fr 0fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    #seccionNosotros{
+        grid-area: nosotros;
+        text-align: center;
+    }
+    
+    .video{
+        margin: auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    #seccionNosotros {
+        div {
+            p{
+                margin: 10px 20%;
+            }
+        }
+    }
+
+    /****************** CONTACTO.HTML ***********************/
+
+    #gridAreasContacto {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "contacto"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 0fr 0fr 1fr 0fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    form{
+        text-align: center;
+        border-style: solid;
+        border-color: $color1;
+        border-radius: 10px;
+        margin: 50px 50px;
+        padding: 20px;
+    }
+
+    /****************** NORMAS.HTML ***************************/
+
+    #gridAreasNormas {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "normas"
+            "preguntas"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 0fr 0fr 0fr 2fr 0fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .cartelNormas {
+        border: black solid;
+        border-radius: 10px;
+        width: 30%;
+        height: 75%;
+        margin: 6px;
+    }
+
+    .cartelNormas {
+        h3 {
+            font-size: 1.3rem;
+        }
+    }
+
+    /*******************  COBERTURA.HTML*******************************/
+
+    #gridAreasCobertura {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "cobertura"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 0fr 0fr 1fr 0fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+
+}   

@@ -1,0 +1,51 @@
+/*********************************** ESTILOS SERVICIOS.HTML **********************************************/
+
+#gridAreasServicios{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "servicios"
+    "inflables"
+    "plaza"
+    "varios"
+    "footer"
+    ;
+    grid-template-columns: 100% ;
+    grid-template-rows: 0fr 0fr 0fr 1fr 1fr 1fr 0fr ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+#seccionServicios {
+    grid-area: servicios;
+    text-align: center;
+    display: inline-block;
+}
+
+.imagenesServicios {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fotosServicios{
+    width: 100%;
+    height: 230px;
+    border-style: solid;
+    border-color: $color1;
+}
+
+#carousel-inflables{
+    grid-area: inflables;
+}
+
+#carousel-plaza{
+    grid-area: plaza;
+}
+
+#carousel-varios{
+    grid-area: varios;
+}
+
+
+/***************************************  Fin servicios ***************************/
