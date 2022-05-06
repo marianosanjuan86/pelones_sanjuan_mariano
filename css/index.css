@@ -337,6 +337,10 @@ form {
   padding: 20px;
 }
 
+form button{
+  margin: 10px;
+}
+
 .cajaFormulario {
   width: 70%;
 }
