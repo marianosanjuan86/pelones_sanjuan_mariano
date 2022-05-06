@@ -113,7 +113,7 @@ footer div h3 {
   display: grid;
   grid-template-areas: "header header" "nav nav" "presentacion presentacion2" "galeria galeria" "footer footer";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 2fr 1fr 5fr 5fr 2fr;
+  grid-template-rows: 2fr 1fr 5fr 3fr 2fr;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
 }
