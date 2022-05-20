@@ -318,6 +318,21 @@ footer div h3 {
   height: 400px;
 }
 
+#seccionNosotros h2:not(:first-child) {
+  background: rgba(253, 108, 108, 0.2);
+  border-radius: 15px;
+  text-align: left;
+  font-size: 1.9rem;
+  text-decoration: underline;
+  text-decoration-color: black;
+  padding: 5px;
+  margin: auto;
+}
+
+#seccionNosotros p {
+  text-align: left;
+}
+
 /************************************** CONTACTO..HTML  ********************************************/
 /*CONFIGURACION DEL GRID*/
 #gridAreasContacto {

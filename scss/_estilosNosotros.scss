@@ -25,3 +25,23 @@
     width: 400px;
     height: 400px;
 }
+
+#seccionNosotros {
+    h2:not(:first-child){
+        background: $color2-ConOpacidad;
+        border-radius: 15px;
+        text-align: left;
+        font-size: 1.9rem;
+        text-decoration: underline;
+        text-decoration-color: black;
+        padding: 5px;
+        margin: auto;  
+    }
+}
+
+#seccionNosotros {
+    p{
+        text-align: left;
+        
+    }
+}
