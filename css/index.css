@@ -113,7 +113,7 @@ footer div h3 {
   display: grid;
   grid-template-areas: "header header" "nav nav" "presentacion presentacion2" "galeria galeria" "footer footer";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 2fr 1fr 5fr 3fr 2fr;
+  grid-template-rows: 2fr 1fr 5fr 5fr 2fr;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
 }
@@ -157,6 +157,7 @@ footer div h3 {
 /*GALERIA DE FOTOS*/
 #galeria {
   grid-area: galeria;
+  text-align: center;
 }
 
 #galeria div {
@@ -270,10 +271,6 @@ footer div h3 {
   justify-content: space-evenly;
 }
 
-.card{
-  margin: 0px 5px;
-}
-
 .fotosServicios {
   width: 100%;
   height: 230px;
@@ -291,6 +288,11 @@ footer div h3 {
 
 #carousel-varios {
   grid-area: varios;
+}
+
+.img_carousel {
+  width: 100%;
+  height: 200px;
 }
 
 /***************************************  Fin servicios ***************************/
@@ -337,12 +339,8 @@ form {
   border-style: solid;
   border-color: #3196E8;
   border-radius: 10px;
-  margin: 3% 20%;
+  margin: 50px 400px;
   padding: 20px;
-}
-
-form button{
-  margin: 10px;
 }
 
 .cajaFormulario {
