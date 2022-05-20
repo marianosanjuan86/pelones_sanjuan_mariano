@@ -449,6 +449,21 @@ form {
   border-radius: 15px;
 }
 
+#seccionCobertura div h2 {
+  background: rgba(253, 108, 108, 0.2);
+  border-radius: 15px;
+  text-align: left;
+  font-size: 1.9rem;
+  text-decoration: underline;
+  text-decoration-color: black;
+  padding: 5px;
+  margin: 5% auto;
+}
+
+#seccionCobertura p {
+  text-align: left;
+}
+
 /****************************************  ANIMACIONES   *************************************************/
 /*secion incio*/
 .animacionTitulo {

@@ -27,3 +27,26 @@
     width: 100%;
     border-radius: 15px;
 }
+
+#seccionCobertura  {
+    div{
+        h2{
+            background: $color2-ConOpacidad;
+            border-radius: 15px;
+            text-align: left;
+            font-size: 1.9rem;
+            text-decoration: underline;
+            text-decoration-color: black;
+            padding: 5px;
+            margin: 5% auto;  
+        }
+    }
+    
+}
+
+#seccionCobertura {
+    p{
+        text-align: left;
+        
+    }
+}
