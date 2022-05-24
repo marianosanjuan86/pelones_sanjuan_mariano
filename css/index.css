@@ -506,12 +506,15 @@ form {
 @keyframes animacionFotoServ {
   1% {
     transform: rotate(0.7turn);
+    z-index: 1;
   }
   80% {
     transform: scale(1.5, 1.5);
+    z-index: 1;
   }
   100% {
     transform: scale(1.7);
+    z-index: 1;
   }
 }
 /* MODO RESPONSIVE*/
