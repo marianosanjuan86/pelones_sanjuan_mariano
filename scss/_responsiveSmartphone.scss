@@ -24,22 +24,28 @@
         margin: 10px 0px;
         padding: 5% 0%;
         width: 100%;
-        height: 100%;
+        height: 25%;
     }
+
+    nav{
+        height: 15%;
+        border-bottom: none;
+    }
+
+   
 
     /*CONFIGURACION GRID*/
     #gridAreas{
         display: grid;
         grid-template-areas: 
-        "header"
-        "nav"
+        "nav header"
         "presentacion"
         "presentacion2"
         "galeria"
         "footer"
         ;
         grid-template-columns: 100% ;
-        grid-template-rows: 0fr 0fr 0.5fr 0fr 1fr 0fr ;
+        grid-template-rows: 0fr 0fr 0.5fr 1fr 0fr ;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
@@ -157,6 +163,11 @@
         margin: 1px;
     }
 
+    .card{
+        margin: auto;
+        
+    }
+
     /******************   NOSOTROS.HTMS ***********************/
 
     #gridAreasNosotros {
@@ -167,7 +178,7 @@
             "nosotros"
             "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 0fr 2fr 0fr;
+        grid-template-rows: 0fr 0fr 2fr 0fr;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
@@ -243,6 +254,12 @@
         h3 {
             font-size: 1.3rem;
         }
+    }
+
+    #seccionPreguntas {
+        ul{    
+            margin: 10px auto;           
+        }     
     }
 
     /*******************  COBERTURA.HTML*******************************/
